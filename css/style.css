@@ -1,0 +1,386 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/05/86/41/35/1000_F_586413570_GSCmwjQTIxMtbzgBaiCNVlKIdGIqj3mF.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .order{
+        width: 100%;
+    }
+}
+/* Advanced Navbar and Offcanvas Styling */
+.custom-navbar {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 80px;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ff4757;
+}
+
+/* Offcanvas Custom Styling */
+.custom-offcanvas {
+    background-color: #ff6b81;
+}
+
+.custom-offcanvas .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-offcanvas .offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.custom-offcanvas .btn-close {
+    filter: invert(1);
+}
+
+.custom-offcanvas .nav-link {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.custom-offcanvas .nav-link i {
+    margin-right: 8px;
+}
+
+.custom-offcanvas .nav-link:hover {
+    color: #e93550;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        display: none;
+    }
+}
+/* Footer Styling */
+.footer {
+    background-color: #ff6b81; /* Vibrant color for fruit juice theme */
+    color: white;
+    padding: 3rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo-img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: #ffe5e9; /* Lighter color on hover */
+}
+
+.footer-contact p, .footer-subscribe p {
+    font-size: 0.9rem;
+}
+
+.footer-contact i, .footer-subscribe i {
+    color: #ffe5e9;
+    margin-right: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 0.9rem;
+    margin-right: -4px; /* Adjust overlap */
+}
+
+.btn-subscribe {
+    background-color: white;
+    color: #ff6b81;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-subscribe:hover {
+    background-color: #ffe5e9;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffe5e9;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.3);
+    margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .row > div {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-subscribe {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+/* Custom Carousel Styling */
+.custom-carousel {
+    margin-top: 50px;
+    height: 500px; /* Set default height */
+    max-height: 80vh; /* Ensure it doesn't take too much space on larger screens */
+    overflow: hidden; /* Hide any overflow */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-carousel {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+}
+
